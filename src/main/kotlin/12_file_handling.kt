@@ -13,12 +13,12 @@ fun main(args: Array<String>) {
     }
     values.sort()
     println(values)
-    var median = 0
+    var median = 0.0
     if (values.size % 2 != 0) {
-        median = values[values.size/2]
+        median = values[values.size/2].toDouble()
         println("Median is $median")
     } else {
-        median = (values[values.size/2] + values[((values.size)/2)+1]) / 2
+        median = (values[values.size/2] + values[((values.size)/2)-1]) / 2.0
         println("Median is $median")
     }
 
